@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaqueries.css">
+    </head>
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo">Lingtong Meng</div>
+            <ul class="nav-links">
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav id="mobile-nav">
+            <div class="logo">Lingtong Meng</div>
+            <div class="mobile-menu-container">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="mobile-menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+        <section id="profile">  
+            <div class="profile-picture-box">
+                <img src="assets/profile-pic.png" alt="Profile Picture" >
+            </div>
+            <div class="profile-text-box">  
+                <p class="greeting-text">Hello I'm</p>
+                <h1 class="main-heading">Lingtong Meng</h1>
+                <p class="subtitle-text">Data Science & AI Student</p>
+                <div class="button-container">
+                    <button>
+                        <a id="resumeBtn" class="btn button-solid">Resume</a>
+                    </button>
+
+                    <button>
+                        <a id="contactBtn" class="btn button-solid">Contact</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="about">
+            <h2 class="main-heading">About Me</h2>
+            <div class="about-text-box">
+                <p>
+                Hi, I'm Lingtong Meng, a Data Science & AI student at FIU. 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Consequuntur nihil ex minima fugiat accusantium repellendus porro, quam voluptatum, 
+                ratione eveniet necessitatibus officiis sed deleniti hic.
+                
+                </p>
+            </div>
+            <div class="about-content-wrapper">
+                <div class="experience-box">
+                    <div class="box-title">
+                        <img src="assets/experience.png" alt="experience logo" height="30">
+                        <h3>Experience</h3>
+                    </div>
+                    <ul class="experience-list">
+                        <li>
+                            <h4>Experience 1</h4>
+                            <p>Description of experience 1.</p>
+                        </li>
+                        <li>
+                            <h4>Experience 2</h4>
+                            <p>Description of experience 2.</p>
+                        </li>
+                        <li>
+                            <h4>Experience 3</h4>
+                            <p>Description of experience 3.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="details-wrapper">
+                    <div class="info-card">
+                        <div class="box-title">
+                            <img src="assets/skills.png" alt="skills logo" height="30">
+                            <h3>Skills</h3>
+                        </div>
+                        <p>C++, Java, Python</p>      
+                    </div>
+                    <div class="info-card">
+                        <div class="box-title">
+                            <img src="assets/education.png" alt="education logo" height="30">
+                            <h3>Education</h3>
+                        </div>
+                        <p>Bachelor of Science in DSAI <br> Minor in Mathematics</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h1 class="main-heading">Projects</h1>
+            <div class="projects-wrapper" id="projects-container">
+                <p style="text-align: center;">Loading...projects</p>
+                
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1 class="main-heading">Contact Me</h1>
+            <div class="contact-card-wrapper">
+                <div class="contact-item">
+                    <img src="assets/email.png" alt="email logo" height="25">
+                    <a href="mailto:lmeng006@fiu.edu">lmeng006@fiu.edu</a>
+                </div>
+                <div class="contact-item">
+                    <img src="assets/linkedin.png" alt="linkedin logo" height="25">
+                    <a href="https://www.linkedin.com/in/lingtong-meng-522249376" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <nav>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>  
+        </section>
+        <p>
+            Copyright &copy; 2026 Lingtong Meng. All rights reserved.
+        </p>
+
+    <script src="script.js"></script>
+    </body>
+</html>

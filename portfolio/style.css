@@ -1,0 +1,304 @@
+/* --- GLOBAL STYLES IMPORTED (FONT) --- */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* FONT */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: "Work Sans", sans-serif;
+  background-color: #33cccc;
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+  height: 17vh;
+}
+/* # for id, . for class */
+.logo{
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+#mobile-nav{
+    display: none;
+}
+
+.mobile-menu-container{
+    display: inline-block;
+}
+
+.humburger-icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1.5rem;
+  width: 30px;
+  cursor: pointer;
+}
+
+.humburger-icon span{
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobile-menu-links{
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobile-menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+}
+
+.mobile-menu-links li {
+  list-style: none;
+}
+
+.mobile-menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.nav-links{
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-size: 24px;
+}
+
+.nav-links li{
+  display: inline-block;
+  margin: 0 16px; /*two value stand for top and bottom, left and right*/
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 16px;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+#profile{
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 60vh;
+}
+
+.profile-picture-box{
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+p{
+  color: rgb(66,66,65);
+}
+
+.profile-text-box{
+  align-self: center;
+  text-align: center;
+  margin-top: 16px;
+  font-weight: 600;
+}
+
+.main-heading{
+  font-size: 48px;
+  text-align: center;
+}
+
+.subtitle-text{
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.btn{
+  display: inline-block;
+  font-weight: 600;
+  padding: 16px;
+  width: 128px;
+  border-radius: 32px;
+  border: gray 2px solid;
+  background-color: transparent;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+button{
+  background: none;
+  border: none;
+}
+
+.button-outline:hover{
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+.button-solid:hover{
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+#about{
+  margin-bottom: 64px;
+  
+}
+
+.about-text-box{
+  margin-top: 15px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.about-content-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  align-items: flex-start;
+  margin-top: 15px;
+}
+
+.experience-box{
+  flex: 1 1 500px;
+  padding: 24px;
+  border-radius: 32px;
+  border: rgb(0, 0, 0) 2px solid;
+  margin-bottom: 32px;
+}
+
+.info-card{
+  flex: 1 1 200px;
+  padding: 1.5rem;
+  border-radius: 32px;
+  border: rgb(0, 0, 0) 2px solid;
+  margin-bottom: 32px;
+  text-align: center; 
+}
+
+.details-wrapper{
+  flex: 2 1 200px;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+section{
+  padding-top: 4vh;
+  margin: 0 160px;
+}
+
+.box-title{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.experience-list{
+  padding-left: 20px;
+  color: rgb(64, 63, 63);
+}
+
+.experience-list li{
+  margin-bottom: 16px;
+}
+
+
+
+
+.projects-wrapper{
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.project-card{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1 1 200px;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 32px;
+  border: rgb(0, 0, 0) 2px solid;
+  margin-bottom: 32px;
+}
+
+.project-title{
+  margin: 16px;
+}
+
+.project-image{
+  border-radius: 32px;
+  width: 100%;
+  height: 100%;
+}
+
+.project-image-box{
+  margin: 16px;
+}
+
+.project-card .button-container {
+    margin-top: 20px; 
+}
+
+#contact {
+  text-align: center;
+  padding-bottom: 32px;
+}
+
+.contact-card-wrapper {
+  border-radius: 32px;
+  border: rgb(27, 22, 22) 2px solid;
+  margin: 32px auto;
+  padding: 24px;
+  width: fit-content;
+}
+
+.contact-item {
+  margin: 16px;
+}
+
+.contact-item p {
+  font-size: larger;
+  display: inline-block;
+  vertical-align: middle;
+}

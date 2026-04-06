@@ -1,0 +1,20 @@
+[
+    {
+        "title": "DadGPT",
+        "image": "./assets/project-1.png",
+        "description": "A chatbot that generates",
+        "link": "https://github.com"
+    },
+    {
+        "title": "My Music Page",
+        "image": "./assets/project-2.png",
+        "description": "A chatbot that generates",
+        "link": "https://github.com"
+    },
+    {
+        "title": "Vpay",
+        "image": "./assets/project-3.png",
+        "description": "A chatbot that generates",
+        "link": "https://github.com"
+    }
+]
