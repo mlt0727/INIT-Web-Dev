@@ -1,0 +1,14 @@
+{
+    "name" : "Workday Autofill",
+    "description": "Helps students fill out workday job applications",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["activeTab", "storage"],
+    "content_scripts": [
+        {
+            "matches": ["*://*.myworkdayjobs.com/*"],
+            "js": ["main.js"],
+            "run_at": "document_idle"
+        }
+    ]
+}
